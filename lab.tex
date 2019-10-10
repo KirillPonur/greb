@@ -13,7 +13,7 @@
 конкретную реализацию импеданса в гребенчатых структурах.
 
 \section{Теоретическая часть}
-\subsection{Введение}
+%\subsection{Введение}
 На направляющей границе $x=0$ задано граничное условие: $[\vec{n}\vec{E}]=Z[\vec{n}[\vec{n}\vec{H}]]$.
 
 
@@ -45,7 +45,7 @@ $$h={{k}\over{\cos kl}}$$
  $p_1 = -iZk, p_2 = -iZ^{-1}k$.
 
 
-Коэффициент замедления волны: ${{c}\over{v}}=(\cos kl)^{-1}$
+Коэффициент замедления волны: ${{c}\over{v_f}}=(\cos kl)^{-1}$
 
 
 Волна существует только в интервале: $n\pi <kl<(n+0.5)\pi$
@@ -76,5 +76,25 @@ $$h={{k}\over{\cos kl}}$$
 \end{figure}
 
 \subsection*{Задание 3. Зависимость поля от положения крышки гребенки.} % (fold)
+Вывод из эксперименат: чем меньше расстояние между гребенкой икрышкой, тем больше поле прижато к системе, тем больше замедление, чем больше замедление, тем меньше длина волны. Это можно показать, представив систему в виде $LC$ линии. $v_f={{1}\over{\sqrt{LC}}}$
+
+Расчет системы (гребенка+крышка) в импедансном приближении.
+
+$$\Delta \varphi +\varkappa^2\varphi=0$$
+$$\varphi=Ae^{-i\varkappa x}+Be^{i\varkappa x}$$
+$$E_z=0 | _{x=h}$$ ТМ-волна: $E_z={{\varkappa^2}\over{ik_0\epsilon}}\varphi$
+$$Z={{E_z}\over{H_y}}$$ 
+$$H_y=-{{d\varphi}\over{dx}}=Ai\varkappa e^{-i\varkappa x}-Bi\varkappa e^{i\varkappa x}$$
+
+
+\begin{equation}
+		\begin{cases}
+				A e^{-i\varkappa x}+Be^{i\varkappa x}=0 \\
+				ZAi\varkappa-ZBi\varkappa={{\varkappa^2}\over{ik_0\epsilon}}(A+B) \\
+			
+		\end{cases}
+\end{equation}
+
+$$e^{2i\varkappa h}(Zk_o\epsilon+\varkappa)-\varkappa+Zk_0\epsilon=0$$
 
 \end{document}
